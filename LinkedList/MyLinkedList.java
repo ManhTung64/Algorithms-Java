@@ -90,8 +90,18 @@ public class MyLinkedList {
         }
         System.out.println("Index not found");
     }
-    public boolean Contains(int data)
+    public boolean isContains(int data)
     {
+        Node current = head;
+        while (current != null){
+            if(current.data == data)
+            {
+                System.out.println("Contain " + data);
+                return true;
+            }
+            current = current.next;
+        }
+        System.out.println("Not Contain !!!");
         return false;
     }
 }
