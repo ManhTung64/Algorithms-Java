@@ -1,5 +1,3 @@
-
-
 public class Test {
     public static void main(String[] args) {
         //example
@@ -13,8 +11,8 @@ public class Test {
         Node current = one;
         while(current != null)
         {
-            System.out.println(current.data); // 9
-            current = current.next;//next = two
+            System.out.println(current.data);
+            current = current.next;
         }
         //implement
 
@@ -23,10 +21,13 @@ public class Test {
         myList.add(2);
         myList.add(3);
         myList.add(4);
+
         myList.addFirst(0);
         myList.addIndex(4,9);
         System.out.println(myList);
+
         myList.removeIndex(4);
+        myList.isContains(4);
         System.out.println(myList);
     }
 }
